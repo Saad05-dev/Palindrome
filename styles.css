@@ -3,5 +3,18 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(rgba(27, 27, 83, 0.973) 30%,rgb(3, 3, 83),rgb(2, 2, 29));
+}
+.palindrome
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
 }
