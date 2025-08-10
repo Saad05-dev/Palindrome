@@ -5,16 +5,83 @@
 body{
     color: white;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(rgba(27, 27, 83, 0.973) 30%,rgb(3, 3, 83),rgb(2, 2, 29));
 }
 .palindrome
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 600;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+.question
+{
+    font-size: 40px;
+    font-weight: 600;
+}
+.container
+{
+    height: 30%;
+    width: 25%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
     flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0px 6px 6px  rgb(101, 94, 199);
+}
+.enter
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+#input
+{
+    width: 75%;
+}
+#text-input
+{
+    border: none;
+    width: 75%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: transparent;
+    border-bottom: 3px solid rgb(101, 94, 199);
+}
+#check-btn
+{
+    width: 20%;
+    margin-left: 5px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(99, 1, 145);
+    cursor: pointer;
+}
+.note
+{
+    width: 25%;
+    background-color: rgb(0,81,30);
+    height: 100px;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 auto;
+}
+.explain
+{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 17px;
 }
