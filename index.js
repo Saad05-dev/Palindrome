@@ -3,34 +3,28 @@ let textInputElement = document.getElementById("text-input");
 let checkButton = document.getElementById("check-btn");
 let result = document.getElementById("result");
 //let palindrome = false; //to check if a word is a palindrome
-// Check input is valid
-function isValidInput(input)
-{
-    if(!input)
-    {
-        alert("Please input a value");
-        return false;
-    }
-    return true;
-}
+
 // check if it is palindrome
 function isPalindrome(input)
 {
-    return input === input.split("").reverse().join("");
+    let cleaned = input.replace(/[^a-z0-9]/gi, "").toLowerCase();
+    return cleaned === cleaned.split("").reverse().join("");
 }
 // Button event listener
 checkButton.addEventListener("click", function (){
-    let textInput = textInputElement.value.trim();
-
-    if(isValidInput(textInput))
+    let textInput = textInputElement.value;
+    // Check input is valid
+    if(!textInput.trim())
     {
-        if(isPalindrome(textInput))
-        {
-            result.textContent = `"${textInput}" is a palindrome.`;
-        }
-        else
-        {
-            result.textContent = `"${textInput}" is not a palindrome.`;
-        }
+        alert("Please input a value");
+        return;
+    }
+    if(isPalindrome(textInput))
+    {
+        result.textContent = `${textInput} is a palindrome.`;
+    }
+    else
+    {
+        result.textContent = `${textInput} is not a palindrome.`;
     }
 });
