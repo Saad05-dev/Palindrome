@@ -2,7 +2,6 @@
 let textInputElement = document.getElementById("text-input");
 let checkButton = document.getElementById("check-btn");
 let result = document.getElementById("result");
-//let palindrome = false; //to check if a word is a palindrome
 
 // check if it is palindrome
 function isPalindrome(input)
